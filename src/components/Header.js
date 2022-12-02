@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/header.css";
+import logo from "../assets/images/logo.png";
 
 //Bootstrap imports
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,12 +20,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand href="#home">
-            <img
-              width={200}
-              height={60}
-              src={require("C://Users/Vasilije/team-drina/src/assets/logo.png")}
-              alt="x"
-            />
+            <img width={200} height={60} src={logo} alt="x" />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
