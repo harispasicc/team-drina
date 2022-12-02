@@ -1,0 +1,15 @@
+h2 {
+  margin: 50px;
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.about-text {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
