@@ -12,6 +12,7 @@ import PriceList from "./components/PriceList";
 function App() {
   const [show, setShow] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  const [search, setSearch] = useState("");
 
   const handleShow = () => setShow(true);
 
@@ -37,6 +38,8 @@ function App() {
         setShowOptions,
         handleCancelOptions,
         handleCancelShow,
+        search,
+        setSearch,
       }}
     >
       <BrowserRouter>
