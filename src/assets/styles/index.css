@@ -14,15 +14,16 @@ code {
 
 .options-modal {
   background-color: white !important;
-
   box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35) !important;
-  margin-top: 25px !important;
-  padding: 20px;
+  margin-top: 20px !important;
+  padding: 30px;
   border-radius: 6px !important;
   width: 350px !important;
   display: flex;
-  align-items: center;
-  justify-content: "center";
+
+  align-items: center !important;
+  justify-content: "center" !important;
+  position: absolute;
 }
 
 .ok-button-options {
@@ -39,7 +40,7 @@ input[type="file"] {
   color: #fff;
   background: #8a4241 !important;
   text-align: center !important;
-  padding: 10px 20px !important;
+  padding: 10px 10px !important;
   letter-spacing: 1.5px !important;
   user-select: none !important;
   cursor: pointer !important;
@@ -67,8 +68,9 @@ input[type="file"] {
 }
 
 #myVideo {
+  top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   z-index: -1000;
@@ -87,7 +89,8 @@ input[type="file"] {
 
 .container-fluid {
   background: linear-gradient(90deg, #ac7d7c 0%, #b36c6a 100%);
-  display: flex;
+  display: block;
+  height: 40vw.5;
   justify-content: space-between;
 }
 
@@ -101,6 +104,7 @@ input[type="file"] {
 
 .card-123 {
   border: none;
+  margin-top: 10px;
   padding: 10px 50px;
   background-color: #964f4e;
   color: white;

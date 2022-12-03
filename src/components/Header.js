@@ -38,10 +38,10 @@ function Header() {
             />
           </Nav>
           <Button className="in-memo-button" onClick={handleShow}>
-            Add in memo
+            In memo
           </Button>
           <Button className="form-pet--button" onClick={handleShowOptions}>
-            Forms for pets
+            Services
           </Button>
         </Container>
       </Navbar>

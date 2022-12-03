@@ -3,9 +3,14 @@ h2 {
 }
 
 .logo {
-  display: flex;
   width: 50%;
-  margin: auto;
+  margin-top: 30px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-text {
@@ -16,4 +21,12 @@ h2 {
 
 .map {
   margin-top: 50px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.map-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

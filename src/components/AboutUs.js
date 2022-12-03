@@ -8,7 +8,7 @@ function AboutUs() {
   useEffect(() => {
     let interval = setInterval(() => {
       const newPets = Math.round(Math.random() * 5);
-      setPets((pets) => pets + newPets);
+      setPets(pets => pets + newPets);
     }, 1000);
 
     return () => {
@@ -19,7 +19,10 @@ function AboutUs() {
   return (
     <div>
       <h2 className="text-center text-primary"> </h2>
-      <img className="logo align-middle" src={logo} alt="logo" />
+      <div className="logo-wrapper">
+        <img className="logo align-middle" src={logo} alt="logo" />
+      </div>
+
       <div className="text-secondary fs-5 fw-semibold about-text">
         We are your partner in distress. Pets are our family members and we
         treat them with respect. In dark hours of parting our ways, we provide
@@ -27,7 +30,9 @@ function AboutUs() {
         Fill form or contact us for more information. <br />
         <b>{pets}</b> pets accompanied to light.
       </div>
-      <img className="map align-middle" src={map} alt="map" />
+      <div className="map-wrapper">
+        <img className="map align-middle" src={map} alt="map" />
+      </div>
     </div>
   );
 }
