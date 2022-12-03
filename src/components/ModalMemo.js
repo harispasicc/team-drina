@@ -38,7 +38,7 @@ function ModalMemo() {
             </Button>
           </div>
         </Form>
-        <Modal.Footer>
+        <Modal.Footer className="modal-footer-2">
           <Button
             variant="secondary"
             onClick={() => {}}
