@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getPictures } from "../api/dog-api";
+import { firstNames } from "../api/first-names";
 
-//Bootstrap imports
-import "bootstrap/dist/css/bootstrap.min.css";
+const randomNum = (num) => {
+  return Math.floor(Math.random() * num);
+};
 
 function Home() {
+  const [pets, setPets] = useState([]);
+  useEffect(() => {
+    const newPets = [];
+    getPictures(5, (pictures) => {
+      pictures.map((img, i) => {
+        console.log(firstNames, firstNames.lenght, randomNum(10));
+        const name = firstNames[randomNum(4946)];
+        console.log(name);
+        newPets.push({ name: name, img: img, age: randomNum(8) });
+      });
+    });
+    setPets(newPets);
+    console.log(newPets);
+  }, []);
+
   return (
     <div className="home">
       <video autoPlay muted loop id="myVideo">
@@ -12,6 +30,9 @@ function Home() {
           type="video/mp4"
         />
       </video>
+      <div>
+        <div></div>
+      </div>
     </div>
   );
 }
