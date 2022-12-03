@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import ModalMemo from "./components/ModalMemo";
 import Options from "./components/Options";
-import Card from "./components/Card";
 import AboutUs from "./components/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -47,7 +46,6 @@ function App() {
           <Route path="/price-list" element={<PriceList />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
-        <Card />
         {show && <ModalMemo />}
         {showOptions && <Options />}
         <Footer />
