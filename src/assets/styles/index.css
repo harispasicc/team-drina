@@ -79,3 +79,12 @@ input[type="file"] {
   align-items: center;
   justify-content: center !important;
 }
+
+#myVideo {
+  position: top;
+  background-position: center right;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
