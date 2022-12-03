@@ -62,3 +62,23 @@
 .wings {
   width: 130px;
 }
+
+.image {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.front-card-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 230px;
+  margin: 10px;
+}
+
+.message {
+  margin: 15px;
+  font-size: 13px;
+}
