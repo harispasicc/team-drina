@@ -9,17 +9,16 @@ const randomNum = (num) => {
 function Home() {
   const [pets, setPets] = useState([]);
   useEffect(() => {
-    const newPets = [];
+    let newPets = [];
     getPictures(5, (pictures) => {
-      pictures.map((img, i) => {
-        console.log(firstNames, firstNames.lenght, randomNum(10));
+      pictures.map((img) => {
         const name = firstNames[randomNum(4946)];
-        console.log(name);
-        newPets.push({ name: name, img: img, age: randomNum(8) });
+        const newPet = { name: name, img: img, age: randomNum(8) };
+        newPets.push(newPet);
+        console.log(newPet);
       });
     });
     setPets(newPets);
-    console.log(newPets);
   }, []);
 
   return (
