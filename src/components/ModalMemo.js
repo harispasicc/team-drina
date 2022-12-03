@@ -44,7 +44,7 @@ function ModalMemo() {
         <Modal.Footer className="modal-footer-2">
           <Button
             variant="secondary"
-            onClick={() => {}}
+            onClick={handleCancelShow}
             className="ok-button-options"
           >
             OK

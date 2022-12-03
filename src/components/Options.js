@@ -8,21 +8,11 @@ function Options() {
   const { showOptions, handleCancelOptions } = useContext(Context);
 
   const showCrematoryForm = () => {
-    // if (!showCreamatory && !showBurial) {
-    //   setShowCrematory(true);
-    // } else {
-    //   setShowCrematory(false);
-    // }
     setShowCrematory(true);
     setShowBurial(false);
   };
 
   const showBurialForm = () => {
-    // if (!showBurial && !showCreamatory) {
-    //   setShowBurial(true);
-    // } else {
-    //   setShowBurial(false);
-    // }
     setShowCrematory(false);
     setShowBurial(true);
   };
@@ -101,7 +91,7 @@ function Options() {
             )}
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={() => {}} className="ok-button-options">
+            <Button onClick={handleCancelOptions} className="ok-button-options">
               OK
             </Button>
             <Button onClick={handleCancelOptions}>Cancel</Button>

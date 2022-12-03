@@ -2,7 +2,7 @@ import React from "react";
 
 function PriceList() {
   return (
-    <body>
+    <div>
       <div className="container-fluid">
         <div className="container p-5">
           <div className="row">
@@ -208,7 +208,7 @@ function PriceList() {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 

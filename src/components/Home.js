@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { getPictures } from "../api/dog-api";
 import { firstNames } from "../api/first-names";
 import Card from "./Card";
+import { Context } from "../contexts/Contexts";
 
-const randomNum = (num) => {
+const randomNum = num => {
   return Math.floor(Math.random() * num);
 };
 
 function Home() {
   const [pets, setPets] = useState([]);
+  const { show, showOptions } = useContext(Context);
+
   useEffect(() => {
     let newPets = [];
-    getPictures(20, (pictures) => {
-      pictures.map((img) => {
+    getPictures(20, pictures => {
+      pictures.map(img => {
         const name = firstNames[randomNum(4946)];
         const newPet = { name: name, img: img, age: randomNum(8) };
         newPets.push(newPet);
@@ -29,11 +32,13 @@ function Home() {
           type="video/mp4"
         />
       </video>
-      <div className="cards">
-        {pets.map((pet, i) => (
-          <Card {...pet} key={i} />
-        ))}
-      </div>
+      {!show && !showOptions && (
+        <div className="cards">
+          {pets.map((pet, i) => (
+            <Card {...pet} key={i} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
