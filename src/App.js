@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import { Context } from "./contexts/Contexts";
+import PriceList from "./components/PriceList";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -43,9 +44,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/price-list" element={<PriceList />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/card" element={<Card />} />
         </Routes>
+        <Card />
         {show && <ModalMemo />}
         {showOptions && <Options />}
         <Footer />

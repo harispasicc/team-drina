@@ -80,6 +80,55 @@ input[type="file"] {
   justify-content: center !important;
 }
 
+.companyList {
+  padding: 1em;
+  background-color: #efefef;
+}
+
+.container-fluid {
+  background: linear-gradient(90deg, #ac7d7c 0%, #b36c6a 100%);
+}
+
+.card-123 {
+  border: none;
+  padding: 10px 50px;
+  background-color: #964f4e;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-123::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-123:hover {
+  transform: scale(1.02, 1.02);
+  -webkit-transform: scale(1.02, 1.02);
+  backface-visibility: hidden;
+  will-change: transform;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.75) !important;
+}
+
+.card-123:hover::after {
+  opacity: 1;
+}
+
+.card-123 .btn-outline-primary {
+  color: white;
+  border: 1px solid white;
+}
+
+.card-123:hover .btn-outline-primary {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
 .cards {
   /* background-color: orange; */
   display: flex;
