@@ -79,3 +79,8 @@ input[type="file"] {
   align-items: center;
   justify-content: center !important;
 }
+
+.companyList {
+  padding: 1em;
+  background-color: #efefef;
+}

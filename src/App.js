@@ -44,8 +44,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/card" element={<Card />} />
         </Routes>
+        <Card />
         {show && <ModalMemo />}
         {showOptions && <Options />}
         <Footer />

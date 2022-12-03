@@ -12,8 +12,12 @@
 .in-memo-button {
   margin-right: 5px;
   background-color: #8a4241 !important;
+  border: 1px solid #8a4241;
+  border-radius: 10px;
 }
 
 .form-pet--button {
   background-color: #8a4241 !important;
+  border: 1px solid #8a4241;
+  border-radius: 10px;
 }
