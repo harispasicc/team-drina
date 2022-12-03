@@ -8,19 +8,23 @@ function Options() {
   const { showOptions, handleCancelOptions } = useContext(Context);
 
   const showCrematoryForm = () => {
-    if (!showCreamatory && !showBurial) {
-      setShowCrematory(true);
-    } else {
-      setShowCrematory(false);
-    }
+    // if (!showCreamatory && !showBurial) {
+    //   setShowCrematory(true);
+    // } else {
+    //   setShowCrematory(false);
+    // }
+    setShowCrematory(true);
+    setShowBurial(false);
   };
 
   const showBurialForm = () => {
-    if (!showBurial && !showCreamatory) {
-      setShowBurial(true);
-    } else {
-      setShowBurial(false);
-    }
+    // if (!showBurial && !showCreamatory) {
+    //   setShowBurial(true);
+    // } else {
+    //   setShowBurial(false);
+    // }
+    setShowCrematory(false);
+    setShowBurial(true);
   };
 
   return (
@@ -58,10 +62,11 @@ function Options() {
                   <Form.Control type="type" placeholder="Enter type of pet" />
                   <Form.Label>Pets name</Form.Label>
                   <Form.Control type="name" placeholder="Enter pets name" />
-                  <Form.Label>Pets size</Form.Label>
-                  <Form.Control type="size" placeholder="Enter pets size" />
-                  <Form.Label>Pets weight</Form.Label>
-                  <Form.Control type="weight" placeholder="Enter pets weight" />
+                  <Form.Label>Container material</Form.Label>
+                  <Form.Control
+                    type="type_material"
+                    placeholder="Brass, copper, steeel"
+                  />
                   <Form.Label>Adress of owner</Form.Label>
                   <Form.Control
                     type="adress"
@@ -81,6 +86,11 @@ function Options() {
                   <Form.Control type="size" placeholder="Enter pets size" />
                   <Form.Label>Pets weight</Form.Label>
                   <Form.Control type="weight" placeholder="Enter pets weight" />
+                  <Form.Label>Coffin type</Form.Label>
+                  <Form.Control
+                    type="coffin_type"
+                    placeholder="Enter type of coffin"
+                  />{" "}
                   <Form.Label>Adress of owner</Form.Label>
                   <Form.Control
                     type="adress"

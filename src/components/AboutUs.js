@@ -17,7 +17,7 @@ function AboutUs() {
 
   return (
     <div>
-      <h2 className="text-center text-primary"></h2>
+      <h2 className="text-center text-primary"> </h2>
       <img className="logo align-middle" src={logo} alt="logo" />
       <div className="text-secondary fs-5 fw-semibold about-text">
         We are your partner in distress. Pets are our family members and we
