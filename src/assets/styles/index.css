@@ -83,4 +83,6 @@ input[type="file"] {
 .cards {
   /* background-color: orange; */
   display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }

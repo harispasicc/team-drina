@@ -11,7 +11,7 @@ function Home() {
   const [pets, setPets] = useState([]);
   useEffect(() => {
     let newPets = [];
-    getPictures(5, (pictures) => {
+    getPictures(20, (pictures) => {
       pictures.map((img) => {
         const name = firstNames[randomNum(4946)];
         const newPet = { name: name, img: img, age: randomNum(8) };

@@ -1,12 +1,12 @@
 .card {
   width: 150px;
   height: 250px;
-  margin: auto;
-  margin-top: 50px;
+  margin: 50px;
+  margin-top: 30px;
 }
 
 .flip-card {
-  background-color: white;
+  background-color: #e0dfef;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #bbb; */
+  background-color: #e0dfef;
   /* opacity: 0.2; */
   color: black;
   border-radius: 5px;
@@ -44,7 +44,7 @@
 }
 
 .flip-card-back {
-  /* background-color: #bbb; */
+  background-color: #e0dfef;
   /* color: white; */
   transform: rotateY(180deg);
   display: flex;
