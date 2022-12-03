@@ -6,16 +6,8 @@ const randomNum = (num) => {
   return Math.floor(Math.random() * num);
 };
 
-const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
+const Card = ({ name = "Max", age = 3, legs = 4, img, message }) => {
   const [flip, setFlip] = useState(false);
-  const message = [
-    "Forever loved",
-    "If love could have saved you",
-    "You would have lived forever",
-    "We will never forget you",
-    "You left a paw print on our fearts",
-    "No longer by my side but always in my heart",
-  ];
 
   return (
     <div className="flip-card card">
@@ -31,7 +23,7 @@ const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
         <div className="flip-card-front">
           <div className="front-card-content">
             <img className="image" src={img} alt="Pet" />
-            <div className="message">{message[randomNum(6)]}</div>
+            <div className="message">{message}</div>
             <div className="name fs-5 fw-light">{name}</div>
           </div>
         </div>
