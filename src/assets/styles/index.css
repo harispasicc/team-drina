@@ -26,3 +26,12 @@ code {
 .ok-button-options {
   margin-right: 5px !important;
 }
+
+#myVideo {
+  position: top;
+  background-position: center right;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
