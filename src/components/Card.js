@@ -17,7 +17,7 @@ const Card = ({ name = "Max", age = 3, legs = 4 }) => {
         }}
       >
         <div className="flip-card-front">
-          <img src={picture} alt="Pet" style={{ width: "130px" }} />
+          <img src={picture} alt="Pet" style={{ width: "140px" }} />
         </div>
         <div className="flip-card-back">
           <div>
