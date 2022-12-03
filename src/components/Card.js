@@ -2,8 +2,20 @@ import { useState } from "react";
 import "../assets/styles/card.css";
 import Wings from "../assets/images/wings.png";
 
+const randomNum = (num) => {
+  return Math.floor(Math.random() * num);
+};
+
 const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
   const [flip, setFlip] = useState(false);
+  const message = [
+    "Forever loved",
+    "If love could have saved you",
+    "You would have lived forever",
+    "We will never forget you",
+    "You left a paw print on our fearts",
+    "No longer by my side but always in my heart",
+  ];
 
   return (
     <div className="flip-card card">
@@ -17,9 +29,10 @@ const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
         }}
       >
         <div className="flip-card-front">
-          <div>
+          <div className="front-card-content">
+            <img className="image" src={img} alt="Pet" />
+            <div className="message">{message[randomNum(6)]}</div>
             <div className="name fs-5 fw-light">{name}</div>
-            <img src={img} alt="Pet" style={{ width: "140px" }} />
           </div>
         </div>
         <div className="flip-card-back">
