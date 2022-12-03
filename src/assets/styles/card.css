@@ -81,4 +81,6 @@
 .message {
   margin: 15px;
   font-size: 13px;
+  height: 100%;
+  max-height: 150px;
 }

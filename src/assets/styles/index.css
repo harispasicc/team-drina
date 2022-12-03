@@ -87,6 +87,16 @@ input[type="file"] {
 
 .container-fluid {
   background: linear-gradient(90deg, #ac7d7c 0%, #b36c6a 100%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+  max-width: 1200px !important;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
 .card-123 {
@@ -121,12 +131,15 @@ input[type="file"] {
 .card-123 .btn-outline-primary {
   color: white;
   border: 1px solid white;
+  width: 100%;
+  max-width: 250px !important;
+  border-radius: 10px !important;
 }
 
-.card-123:hover .btn-outline-primary {
-  color: black;
-  background: white;
-  border: 1px solid black;
+.btn-outline-primary:hover {
+  color: #964f4e !important;
+  background-color: white !important;
+  border: 1px solid #964f4e !important ;
 }
 
 .cards {
@@ -134,4 +147,9 @@ input[type="file"] {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+
+.list-group-item {
+  border-radius: 10px !important;
+  margin-bottom: 10px;
 }

@@ -4,7 +4,7 @@ function PriceList() {
   return (
     <div>
       <div className="container-fluid">
-        <div className="container p-5">
+        <div className="container p-4">
           <div className="row">
             <div className="col-lg-4 col-md-12 mb-4">
               <div className="card-123 h-100 shadow-lg">
@@ -147,8 +147,8 @@ function PriceList() {
                     <br></br>
                   </div>
                   <p className="card-123-text">
-                    The crematory with premium Swarowski urn or burial with
-                    premium coffin with weekly maintance
+                    The crematory with Swarowski urn or burial with premium
+                    coffin with weekly maintance
                   </p>
                 </div>
                 <ul className="list-group list-group-flush">
@@ -163,7 +163,7 @@ function PriceList() {
                     >
                       <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                     </svg>{" "}
-                    Cras justo odio
+                    Swarowski Crematory
                   </li>
                   <li className="list-group-item">
                     <svg
@@ -176,7 +176,7 @@ function PriceList() {
                     >
                       <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                     </svg>{" "}
-                    Dapibus ac facilisis in
+                    Burial
                   </li>
                   <li className="list-group-item">
                     <svg
@@ -189,7 +189,7 @@ function PriceList() {
                     >
                       <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                     </svg>{" "}
-                    Vestibulum at eros
+                    Daily maintance
                   </li>
                 </ul>
                 <div className="card-123-body text-center">
