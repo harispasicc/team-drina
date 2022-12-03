@@ -4,3 +4,16 @@
   box-shadow: 0 4px 6px -6px #222;
   color: black;
 }
+
+.navbar {
+  height: 80px;
+}
+
+.in-memo-button {
+  margin-right: 5px;
+  background-color: #8a4241 !important;
+}
+
+.form-pet--button {
+  background-color: #8a4241 !important;
+}

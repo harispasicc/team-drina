@@ -5,7 +5,7 @@ import { Context } from "../contexts/Contexts";
 function Options() {
   const [showCreamatory, setShowCrematory] = useState(false);
   const [showBurial, setShowBurial] = useState(false);
-  const { showOptions } = useContext(Context);
+  const { showOptions, handleCancelOptions } = useContext(Context);
 
   const showCrematoryForm = () => {
     if (!showCreamatory && !showBurial) {
@@ -94,7 +94,7 @@ function Options() {
             <Button onClick={() => {}} className="ok-button-options">
               OK
             </Button>
-            <Button onClick={() => {}}>Cancel</Button>
+            <Button onClick={handleCancelOptions}>Cancel</Button>
           </Modal.Footer>
         </Modal.Dialog>
       )}

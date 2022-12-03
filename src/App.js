@@ -15,8 +15,16 @@ function App() {
 
   const handleShow = () => setShow(true);
 
+  const handleCancelShow = () => {
+    setShow(false);
+  };
+
   const handleShowOptions = () => {
     setShowOptions(true);
+  };
+
+  const handleCancelOptions = () => {
+    setShowOptions(false);
   };
   return (
     <Context.Provider
@@ -27,6 +35,8 @@ function App() {
         handleShowOptions,
         showOptions,
         setShowOptions,
+        handleCancelOptions,
+        handleCancelShow,
       }}
     >
       <BrowserRouter>

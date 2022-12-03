@@ -4,7 +4,7 @@ import { FaUpload } from "react-icons/fa";
 import { Context } from "../contexts/Contexts";
 
 function ModalMemo() {
-  const { show } = useContext(Context);
+  const { show, handleCancelShow } = useContext(Context);
 
   return (
     <>
@@ -49,7 +49,7 @@ function ModalMemo() {
           >
             OK
           </Button>
-          <Button onClick={() => {}}>Cancel</Button>
+          <Button onClick={handleCancelShow}>Cancel</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </>

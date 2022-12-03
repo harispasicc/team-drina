@@ -15,23 +15,21 @@ function Header() {
 
   return (
     <div>
-      <Navbar
-        id="header"
-        style={{
-          height: "80px",
-        }}
-        variant="lignt"
-      >
+      <Navbar id="header" className="navbar" variant="lignt">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img width={200} height={60} src={logo} alt="x" />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about-us">About Us</Nav.Link>
           </Nav>
-          <Button onClick={handleShow}>Add in memo</Button>
-          <Button onClick={handleShowOptions}>Forms for pets</Button>
+          <Button className="in-memo-button" onClick={handleShow}>
+            Add in memo
+          </Button>
+          <Button className="form-pet--button" onClick={handleShowOptions}>
+            Forms for pets
+          </Button>
         </Container>
       </Navbar>
     </div>
