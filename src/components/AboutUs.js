@@ -3,7 +3,7 @@ import "../assets/styles/about-us.css";
 import logo from "../assets/images/logo.png";
 
 function AboutUs() {
-  const [pets, setPets] = useState(1234);
+  const [pets, setPets] = useState(Math.round(Math.random() * 1000) + 1500);
   useEffect(() => {
     let interval = setInterval(() => {
       const newPets = Math.round(Math.random() * 5);
