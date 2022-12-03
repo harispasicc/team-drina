@@ -14,10 +14,10 @@ code {
 
 .options-modal {
   background-color: white !important;
-  border: 2px solid gray !important;
+
   box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35) !important;
   margin-top: 25px !important;
-  padding: 5px;
+  padding: 20px;
   border-radius: 6px !important;
   width: 350px !important;
   display: flex;
