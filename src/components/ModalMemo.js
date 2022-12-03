@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FaUpload } from "react-icons/fa";
+import { Context } from "../contexts/Contexts";
 
 function ModalMemo() {
+  const { show } = useContext(Context);
+
   return (
     <>
-      <Modal.Dialog className="options-modal">
+      <Modal.Dialog show={show} className="options-modal">
         <Modal.Header
           style={{
             display: "flex",
