@@ -82,16 +82,10 @@ function Options() {
           )}
         </Modal.Body>
         <Modal.Footer>
-          <Button
-            variant="secondary"
-            onClick={() => {}}
-            className="ok-button-options"
-          >
+          <Button onClick={() => {}} className="ok-button-options">
             OK
           </Button>
-          <Button variant="primary" onClick={() => {}}>
-            Cancel
-          </Button>
+          <Button onClick={() => {}}>Cancel</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </>
