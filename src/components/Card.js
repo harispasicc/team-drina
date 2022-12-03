@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../assets/styles/card.css";
+import Wings from "../assets/images/wings.png";
 
 const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
   const [flip, setFlip] = useState(false);
@@ -16,9 +17,13 @@ const Card = ({ name = "Max", age = 3, legs = 4, img }) => {
         }}
       >
         <div className="flip-card-front">
-          <img src={img} alt="Pet" style={{ width: "140px" }} />
+          <div>
+            <div className="name fs-5 fw-light">{name}</div>
+            <img src={img} alt="Pet" style={{ width: "140px" }} />
+          </div>
         </div>
         <div className="flip-card-back">
+          <img className="wings" src={Wings} alt="" srcset="" />
           <div>
             <div>Name: {name}</div>
             <div>Age: {age}</div>

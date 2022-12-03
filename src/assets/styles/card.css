@@ -6,7 +6,7 @@
 }
 
 .flip-card {
-  background-color: #e0dfef;
+  background-color: #f3eee9;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0dfef;
+  background-color: #f3eee9;
   /* opacity: 0.2; */
   color: black;
   border-radius: 5px;
@@ -44,11 +44,21 @@
 }
 
 .flip-card-back {
-  background-color: #e0dfef;
+  background-color: #f3eee9;
   /* color: white; */
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.wings {
+  width: 130px;
 }
