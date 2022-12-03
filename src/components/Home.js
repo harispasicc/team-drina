@@ -49,7 +49,9 @@ function Home() {
       {!show && !showOptions && (
         <div className="cards">
           {pets
-            .filter((pet) => pet.name.includes(search))
+            .filter((pet) =>
+              pet.name.toLowerCase().includes(search.toLowerCase())
+            )
             .map((pet, i) => (
               <Card {...pet} key={i} />
             ))}
