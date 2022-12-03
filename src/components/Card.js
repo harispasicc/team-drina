@@ -2,11 +2,11 @@ import { useState } from "react";
 import "../assets/styles/card.css";
 import Wings from "../assets/images/wings.png";
 
-const randomNum = (num) => {
+const randomNum = num => {
   return Math.floor(Math.random() * num);
 };
 
-const Card = ({ name = "Max", age = 3, legs = 4, img, message }) => {
+const Card = ({ name = "Max", age = 3, img, message }) => {
   const [flip, setFlip] = useState(false);
 
   return (
@@ -32,7 +32,6 @@ const Card = ({ name = "Max", age = 3, legs = 4, img, message }) => {
           <div>
             <div>Name: {name}</div>
             <div>Age: {age}</div>
-            <div>Legs: {legs}</div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { firstNames } from "../api/first-names";
 import Card from "./Card";
 import { Context } from "../contexts/Contexts";
 
-const randomNum = (num) => {
+const randomNum = num => {
   return Math.floor(Math.random() * num);
 };
 
@@ -23,8 +23,8 @@ function Home() {
 
   useEffect(() => {
     let newPets = [];
-    getPictures(20, (pictures) => {
-      pictures.map((img) => {
+    getPictures(20, pictures => {
+      pictures.map(img => {
         const name = firstNames[randomNum(4946)];
         const newPet = {
           name: name,
@@ -46,10 +46,19 @@ function Home() {
           type="video/mp4"
         />
       </video>
+      <h1
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        In Memoriam
+      </h1>
       {!show && !showOptions && (
         <div className="cards">
           {pets
-            .filter((pet) =>
+            .filter(pet =>
               pet.name.toLowerCase().includes(search.toLowerCase())
             )
             .map((pet, i) => (

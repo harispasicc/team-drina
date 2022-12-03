@@ -90,7 +90,7 @@ input[type="file"] {
 .container-fluid {
   background: linear-gradient(90deg, #ac7d7c 0%, #b36c6a 100%);
   display: block;
-  height: 40vw.5;
+  height: 40vw;
   justify-content: space-between;
 }
 
