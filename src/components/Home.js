@@ -4,20 +4,34 @@ import { firstNames } from "../api/first-names";
 import Card from "./Card";
 import { Context } from "../contexts/Contexts";
 
-const randomNum = num => {
+const randomNum = (num) => {
   return Math.floor(Math.random() * num);
 };
 
+const message = [
+  "Forever loved",
+  "If love could have saved you",
+  "You would have lived forever",
+  "We will never forget you",
+  "You left a paw print on our fearts",
+  "No longer by my side but always in my heart",
+];
+
 function Home() {
   const [pets, setPets] = useState([]);
-  const { show, showOptions } = useContext(Context);
+  const { show, showOptions, search } = useContext(Context);
 
   useEffect(() => {
     let newPets = [];
-    getPictures(20, pictures => {
-      pictures.map(img => {
+    getPictures(20, (pictures) => {
+      pictures.map((img) => {
         const name = firstNames[randomNum(4946)];
-        const newPet = { name: name, img: img, age: randomNum(8) };
+        const newPet = {
+          name: name,
+          img: img,
+          age: randomNum(8),
+          message: message[randomNum(6)],
+        };
         newPets.push(newPet);
       });
       setPets(newPets);
@@ -34,9 +48,11 @@ function Home() {
       </video>
       {!show && !showOptions && (
         <div className="cards">
-          {pets.map((pet, i) => (
-            <Card {...pet} key={i} />
-          ))}
+          {pets
+            .filter((pet) => pet.name.includes(search))
+            .map((pet, i) => (
+              <Card {...pet} key={i} />
+            ))}
         </div>
       )}
     </div>
