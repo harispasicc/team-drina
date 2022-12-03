@@ -29,8 +29,9 @@ function Header() {
               type="search"
               name="search"
               id="search"
+              placeholder="Search for your pet..."
               value={search}
-              onChange={(term) => {
+              onChange={term => {
                 setSearch(term.target.value);
                 console.log(term.target.value);
               }}
