@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/about-us.css";
 import logo from "../assets/images/logo.png";
+import map from "../assets/images/map.png";
 
 function AboutUs() {
   const [pets, setPets] = useState(Math.round(Math.random() * 1000) + 1500);
@@ -26,6 +27,7 @@ function AboutUs() {
         Fill form or contact us for more information. <br />
         <b>{pets}</b> pets accompanied to light.
       </div>
+      <img className="map align-middle" src={map} alt="map" />
     </div>
   );
 }
