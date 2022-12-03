@@ -128,8 +128,3 @@ input[type="file"] {
   background: white;
   border: 1px solid black;
 }
-
-.inner-box {
-  border: 1px solid black;
-  border-radius: 10px;
-}
